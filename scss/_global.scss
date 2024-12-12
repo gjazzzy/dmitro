@@ -1,0 +1,82 @@
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+.container{
+  position: relative;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.scroll__btn{
+  padding: 30px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;  
+}
+
+.scroll__link{
+  padding: 4px;
+  display: flex;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+button{
+  @include regular;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 0px;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.button{
+  @include bold;
+  background: #3d3d3d;
+  border-radius: 2px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.title{
+  @include regular;
+  position: relative;
+  font-size: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.link-line{
+    padding: 10px 0 10px 0;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+  &::before{
+        content: '';
+        position: absolute;
+        width: 0%;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #ffffff;
+        transition: 0.4s;
+    }
+    &:hover::before{
+        width: 100%;
+        left: 0;
+}
+}
+
+
+
+
+  

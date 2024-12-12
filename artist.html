@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>SellMusic</title>
+</head>
+
+<body>
+   <div class="header">
+      <div class="container">
+         <div class="header__wrap">
+            <a class="logo" href="index.html"><img src="images/icons/logo.svg" alt="#logo"></a>
+
+            <div class="header__search">
+               <button class="header__search-btn">
+                  <img class="header__search-image" src="images/icons/icon-search.svg" alt="search">
+               </button>
+               <input class="header__search-input" placeholder="Найти музыканта" type="search" />
+            </div>
+
+            <div class="header__btns">
+               <button class="header__btn-login link-line">Войти</button>
+               <button class="header__btn-registration link-line">Регистрация</button>
+               <button class="header__btn-cart">
+                  <img src="images/icons/shopping-bag.svg" id="button-image" alt="#">
+               </button>
+
+               <button class="header__btn-user"><img src="images/icons/icon-user.svg" alt="#"></button>
+            </div>
+            <!-- /.header__btns -->
+         </div>
+         <!-- /.header__wrap -->
+      </div>
+      <!-- /.container -->
+   </div>
+   <!-- /.header -->
+
+   <main class="mian">
+      <section class="artist" id="artist">
+         <div class="container">
+            <div class="artist__wrap">
+
+               <div class="artist__style">
+                  <h2 class="artist__title">RDSJAZZZY</h2>
+                  <h3 class="beat__style-title">Жанры</р>
+                     <div class="artist__style-btns">
+                        <button class="artist__style-btn">
+                           <div class="artist__style-name">R&B</div>
+                        </button>
+                        <button class="artist__style-btn">
+                           <div class="artist__style-name">HIP-HOP</div>
+                        </button>
+                        <button class="artist__style-btn">
+                           <div class="artist__style-name">POP</div>
+                        </button>
+                        <button class="artist__style-btn">
+                           <div class="artist__style-name">DRILL</div>
+                        </button>
+                     </div>
+                     <!-- /.artist__style-btns -->
+               </div>
+               <!-- /.artist__style -->
+
+               <div class="artist__cards">
+                  <div class="artist__card">
+                     <div class="artist__card-top">
+                        <button class="artist__card-btn--like"></button>
+                        <button class="artist__card-btn--play"></button>
+
+                        <img class="artist__card-img" src="images/cover/card-(1).jpg" alt="#">
+                     </div>
+                     <!-- /.artist__card-top -->
+
+                     <div class="artist__card-info">
+                        <div class="artist__card-style">Жанр: hip-hop</div>
+                        <a class="artist__card-maker" href="artist.html">jazzy</a>
+                        <div class="artist__card-price">Cтоимость: 3000 ₽</div>
+                     </div>
+
+                     <div class="artist__card-btns">
+                        <button class="artist__card-btn">Купить</button>
+                     </div>
+                  </div>
+                  <!-- /.artist__card -->
+               </div>
+               <!-- /.artist__cards -->
+            </div>
+            <!-- /.artist__wrap -->
+         </div>
+         <!-- /.container -->
+      </section>
+      <!-- /.artist -->
+
+      <!-- MODAL -->
+      <div class="user modal">
+         <div class="user__wrap side-wrap">
+            <div class="user__info">
+               <div class="user__name">RDSJAZZZY</div>
+               <div class="user__phone">post@mail.ru</div>
+               <!-- /.user__name,phone -->
+            </div>
+            <!-- /.user__info -->
+
+            <div class="user__items">
+               <div class="user__item user__item-project">
+                  <img class="user__item-img" src="images/icons/icon-nota.svg" alt="#">
+                  <div class="user__item-text">Мои проекты</div>
+               </div>
+               <!-- /.user__item -->
+
+               <div class="user__item  user__item-orders">
+                  <img class="user__item-img" src="images/icons/icon-shopping-cart.svg" alt="#">
+                  <div class="user__item-text">Купленные проекты</div>
+               </div>
+               <!-- /.user__item -->
+
+               <div class="user__item user__item-new--project">
+                  <img class="user__item-img" src="images/icons/icon-add.svg" alt="#">
+                  <div class="user__item-text">Создать новый проект</div>
+               </div>
+               <!-- /.user__item -->
+            </div>
+            <!-- /.user__items -->
+
+            <div class="user__btns">
+               <button class="user__btn button">Выйти</button>
+            </div>
+            <!-- /.user__btns -->
+
+            <button class="user__btn-close close-btn">
+               <img class="user-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.user__wrap -->
+      </div>
+      <!-- /.user -->
+
+      <div class="reg modal">
+         <div class="reg__wrap">
+            <div class="reg__title title">Регистрация</div>
+            <!-- /.reg__title -->
+
+            <form class="reg__form">
+               <input class="reg__input" placeholder="Псевдоним" type="text">
+               <input class="reg__input" placeholder="e-mail" type="email">
+               <input class="reg__input" placeholder="Пароль" type="password">
+               <input class="reg__input" placeholder="Повторите пароль" type="password">
+               <input class="reg__input" value="+7" placeholder="Номер" type="tel" />
+            </form>
+            <!-- /.reg__form -->
+
+            <button class="reg__btn button" type="submit">Зарегестрировать</button>
+
+            <button class="reg__btn-close close-btn">
+               <img class="user-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.reg__wrap -->
+      </div>
+      <!-- /.reg -->
+
+      <div class="login modal">
+         <div class="login__wrap">
+            <div class="login__title title">Войти</div>
+            <!-- /.login__title -->
+
+            <form class="login__form">
+               <input class="login__input" placeholder="e-mail" type="email">
+               <input class="login__input" placeholder="Пароль" type="password">
+               <input class="login__input" value="+7" placeholder="Номер" type="tel" />
+            </form>
+            <!-- /.login__form -->
+
+            <button class="login__btn button button-orange" type="submit">Войти</button>
+            <button class="login__btn button button-orange relogin__btn" type="submit">Восстановить
+               пароль</button>
+
+            <button class="login__btn-close close-btn">
+               <img class="user-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.login__wrap -->
+      </div>
+      <!-- /.login -->
+
+      <div class="relogin modal">
+         <div class="relogin__wrap">
+            <div class="relogin__title title">Сброс пароля</div>
+            <!-- /.relogin__title -->
+
+            <form class="relogin__form">
+               <input class="relogin__input" placeholder="e-mail" type="email">
+               <input class="relogin__input" placeholder="Новый пароль" type="password">
+               <input class="relogin__input" placeholder="Повторите пароль" type="password">
+               <input class="relogin__input" value="+7" placeholder="Номер" type="tel" />
+            </form>
+            <!-- /.relogin__form -->
+
+            <button class="relogin__btn button button-orange" type="submit">Сбросить</button>
+
+            <button class="relogin__btn-close close-btn">
+               <img class="user-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+
+            <button class="relogin__btn-back back-btn">
+               <img src="images/icons/icon-arrow-prew.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.relogin__wrap -->
+      </div>
+      <!-- /.relogin -->
+
+      <div class="cart">
+         <div class="cart__title">Вам понравилось</div>
+
+         <div class="cart__items">
+            <div class="cart__item">
+               <img class="cart__img" src="images/cover/cover-card.png" alt="#">
+               <div class="cart__info">
+                  <div class="cart__card-style">Жанр: hip-hop</div>
+                  <a class="cart__card-maker" href="#">jazzy</a>
+                  <div class="cart__card-price">Cтоимость: 3000 ₽</div>
+                  <button class="cart__card-btn button">оплатить</button>
+               </div>
+               <!-- /.cart__info -->
+
+               <button class="cart__btn-close close-btn">
+                  <img class="burger-btn" src="images/icons/icon-close.svg" alt="#">
+               </button>
+            </div>
+            <!-- /.cart__item -->
+         </div>
+         <!-- /.cart__items -->
+
+         <div class="cart__bottom">
+            <div class="cart__sum">
+               <span class="cart__sum">Итого:</span>
+               3 000 ₽
+            </div>
+
+            <button class="cart__btn-pay button">оплатить</button>
+         </div>
+         <!-- /.cart__bottom -->
+      </div>
+      <!-- /.cart -->
+
+
+      <div class="new modal">
+         <div class="new__wrap side-wrap">
+            <div class="new__title title">Новый проект</div>
+            <!--./new__title  -->
+
+            <div class="new__items">
+               <div class="new__input-item">
+                  <p class="new__input-text">Загрузите изображение проекта</p>
+                  <input class="new__input" type="file" accept="image/*,image/jpeg">
+               </div>
+               <!-- /.new__input-item -->
+
+               <div class="new__input-item">
+                  <p class="new__input-text">Загрузите файл проекта</p>
+                  <input class="new__input" type="file">
+               </div>
+               <!-- /.new__input-item -->
+
+
+               <div class="new__input-item">
+                  <form>
+                     <label for="style-select">Жанр проекта</label>
+                     <select name="style" id="#">
+                        <option value="">-- любой --</option>
+                        <option value="#">R&B</option>
+                        <option value="#">HIP-HOP</option>
+                        <option value="#">DRILL</option>
+                        <option value="#">POP</option>
+                     </select>
+                  </form>
+               </div>
+               <!-- /.new__input-item -->
+
+               <div class="new__input-item">
+                  <p class="new__input-text">Цена проекта (₽)</p>
+                  <input class="new__input" type="text">
+               </div>
+               <!-- /.new__input-item -->
+
+            </div>
+            <!-- /.new--items -->
+
+            <button class="new__btn button" type="submit">Опубликовать</button>
+            <button class="new__btn-close close-btn">
+               <img class="new-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+
+            <button class="new__btn-back back-btn">
+               <img src="images/icons/icon-arrow-prew.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.new__wrap -->
+      </div>
+      <!-- /.new -->
+
+      <div class="project modal">
+         <div class="project__wrap side-wrap">
+            <div class="project__title title">Мои проекты</div>
+            <!-- /.project__title -->
+
+            <div class="project__item">
+               <img class="project__img" src="images/cover/cover-card.png" alt="#">
+               <div class="project__info">
+                  <div class="project__card-style">Жанр: hip-hop</div>
+                  <a class="project__card-maker" href="#">jazzy</a>
+                  <div class="project__card-price">Cтоимость: 3000 ₽</div>
+                  <button class="project__card-btn button">удалить проект</button>
+               </div>
+               <!-- /.project__info -->
+            </div>
+            <!-- /.project__item -->
+
+            <div class="project__item">
+               <img class="project__img" src="images/cover/cover-card.png" alt="#">
+               <div class="project__info">
+                  <div class="project__card-style">Жанр: hip-hop</div>
+                  <a class="project__card-maker" href="artist.html">jazzy</a>
+                  <div class="project__card-price">Cтоимость: 3000 ₽</div>
+                  <button class="project__card-btn button">удалить проект</button>
+               </div>
+               <!-- /.project__info -->
+            </div>
+            <!-- /.project__item -->
+
+            <button class="project__btn-close close-btn">
+               <img class="project-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+
+            <button class="project__btn-back back-btn">
+               <img src="images/icons/icon-arrow-prew.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.project__wrap -->
+      </div>
+      <!-- /.project -->
+
+      <div class="orders modal">
+         <div class="orders__wrap side-wrap">
+
+            <div class="orders__title title">Купленные проекты</div>
+            <!-- /.orders__title -->
+
+            <div class="orders__item">
+               <img class="orders__img" src="images/cover/cover-card.png" alt="#">
+               <div class="orders__info">
+                  <div class="orders__card-style">Жанр: hip-hop</div>
+                  <a class="orders__card-maker" href="artist.html">jazzy</a>
+                  <div class="orders__card-price">Cтоимость: 3000 ₽</div>
+                  <button class="orders__card-btn button">скачать фаил</button>
+               </div>
+               <!-- /.orders__info -->
+            </div>
+            <!-- /.orders__item -->
+
+            <div class="orders__item">
+               <img class="orders__img" src="images/cover/cover-card.png" alt="#">
+               <div class="orders__info">
+                  <div class="orders__card-style">Жанр: hip-hop</div>
+                  <a class="orders__card-maker" href="artist.html">jazzy</a>
+                  <div class="orders__card-price">Cтоимость: 3000 ₽</div>
+                  <button class="orders__card-btn button">скачать фаил</button>
+               </div>
+               <!-- /.orders__info -->
+            </div>
+            <!-- /.orders__item -->
+
+            <button class="orders__btn-close close-btn">
+               <img class="orders-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+
+            <button class="orders__btn-back back-btn">
+               <img src="images/icons/icon-arrow-prew.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.orders__wrap -->
+      </div>
+      <!-- /.orders -->
+   </main>
+   <!-- /.mian -->
+
+
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="js/slick.min.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>

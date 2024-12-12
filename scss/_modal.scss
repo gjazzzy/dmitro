@@ -1,0 +1,381 @@
+.modal{
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #000000c2;
+   z-index: 10;
+ }
+
+ .side-wrap{
+   @include regular;
+   position: relative;
+   position: absolute;
+   display: flex;
+   background: #ffffff;
+   gap: 20px;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   padding: 20px 20px 20px 40px;
+   width: 100%;
+   max-width: 400px;
+   min-width: 200px;
+ }
+ 
+
+ .close-btn{
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+   border: 0;
+   padding: 5px;
+   right: 10px;
+   top: 10px;
+   &:hover{
+         background: #cacaca;
+      }
+ }
+
+
+.back-btn{
+ position: absolute;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 20px;
+ border: 0;
+ padding: 5px;
+ left: 0px;
+ top: 10px;
+ background:transparent;
+ &:hover{
+         background: #cacaca;
+      }
+ }
+
+//registrition
+.reg{
+ &__wrap{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 37px 48px;
+    gap: 20px;
+    max-width: 333px;
+    width: 100%;
+ }
+
+ &__form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+ }
+
+ &__input{
+    font-size: 16px;
+    color: #000000;
+    background: transparent;
+    max-width: 333px;
+    border: 0;
+    padding: 0px 5px 12px 5px;
+    border-bottom: 1px #000000 solid;
+    &:focus{
+       outline: none;
+    }
+ }
+
+ &__btn{
+    margin-top: 10px;
+    padding: 10px;
+ }
+}
+
+//login
+.login{
+ &__wrap{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 37px 48px;
+    gap: 20px;
+    max-width: 333px;
+    width: 100%;
+ }
+
+ &__form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+ }
+
+ &__input{
+    font-size: 16px;
+    color: #000000;
+    background: transparent;
+    max-width: 333px;
+    border: 0;
+    padding: 0px 5px 12px 5px;
+    border-bottom: 1px #000000 solid;
+    &:focus{
+       outline: none;
+    }
+ }
+
+ &__btn{
+    margin-top: 10px;
+    padding: 10px;
+ }
+}
+
+//relogin
+.relogin{
+   &__wrap{ 
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 37px 48px;
+      gap: 20px;
+      max-width: 333px;
+      width: 100%;
+   }
+
+   &__form{
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+   }
+
+   &__input{
+      font-size: 16px;
+      color: #000000;
+      background: transparent;
+      max-width: 333px;
+      border: 0;
+      padding: 0px 5px 12px 5px;
+      border-bottom: 1px #000000 solid;
+      &:focus{
+         outline: none;
+      }
+   }
+
+   &__btn{
+      margin-top: 10px;
+      padding: 10px;
+   }
+}
+
+//user
+.user{
+   @include light;
+   &__wrap{ 
+      justify-content: space-between;
+      flex-direction: column;
+   }
+
+   &__info{
+      width: 100%;
+   }
+
+   &__name{
+      display: flex;
+      align-items: end;
+      justify-content: start;
+      color: #000000;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+   }
+
+   &__phone{
+      color: #000000;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      border-bottom: 1px #a6a6a64f solid;
+   }
+
+   &__items{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      height: 100%;
+      width: 100%;
+   }
+
+   &__item{
+      cursor: pointer;
+      border-bottom: 1px #a6a6a64f solid;
+      padding-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &:hover{
+         border-bottom: #5c5b5b 1px solid;
+      }
+   }
+
+
+   &__btns{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      gap: 20px;
+      & button, a{
+         width: 250px;
+      }
+   }
+
+   &__btn{
+      display: flex;
+     justify-content: center;
+   }
+}
+
+.orders{
+   &__wrap{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar{
+         width: 0;
+         height: 0;
+         display: none;
+         background: transparent; 
+       }
+   }
+
+   &__item{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      width: 100%;
+   }
+
+   &__info{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      
+      justify-content: flex-end;
+      gap: 5px;
+   }
+
+   &__img{
+      width: 100px;
+      height: 100px;
+      border: 1px solid #a6a6a64f;
+      object-fit: cover;
+      object-position: bottom;
+      border-radius: 20px;
+   }
+}
+
+.project{
+   &__wrap{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar{
+         width: 0;
+         height: 0;
+         display: none;
+         background: transparent; 
+       }
+   }
+
+   &__item{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      width: 100%;
+   }
+
+   &__info{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      
+      justify-content: flex-end;
+      gap: 5px;
+   }
+
+   &__img{
+      width: 100px;
+      height: 100px;
+      border: 1px solid #a6a6a64f;
+      object-fit: cover;
+      object-position: bottom;
+      border-radius: 20px;
+   }
+}
+
+.new{
+   &__wrap{
+      @include regular;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar{
+         width: 0;
+         height: 0;
+         display: none;
+         background: transparent; 
+       }
+   }
+
+   &__items{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      gap: 30px;
+   }
+
+   &__img{
+      width: 100px;
+      height: 100px;
+      border: 1px solid #a6a6a64f;
+      object-fit: cover;
+      object-position: bottom;
+      border-radius: 20px;
+   }
+
+}
+
+

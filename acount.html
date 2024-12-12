@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>SellMusic</title>
+</head>
+
+<body>
+   <div class="header">
+      <div class="container">
+         <div class="header__wrap">
+            <a class="logo" href="index.html"><img src="images/icons/logo.svg" alt="#logo"></a>
+            <nav class="header__nav">
+               <button class="header__nav-btn link-line">Мои проекты</button>
+               <button class="header__nav-btn link-line">Купленные пронкты</button>
+               <button class="header__nav-btn link-line">Создать новый проект </button>
+            </nav>
+            <!-- /.header__nav -->
+
+            <div class="header__btns">
+
+               <button class="header__btn-login link-line">Войти</button>
+               <button class="header__btn-registration link-line">Регистрация</button>
+               <button class="header__btn-cart"> <img src="images/icons/shopping-bag.svg" id="button-image"
+                     alt="#"></button>
+               <button class="header__link-user" href="acount.html"><img src="images/icons/icon-user.svg"
+                     alt="#"></button>
+            </div>
+            <!-- /.header__btns -->
+         </div>
+         <!-- /.header__wrap -->
+      </div>
+      <!-- /.container -->
+   </div>
+   <!-- /.header -->
+
+   <main class="mian">
+      <section class="account">
+         <div class="container">
+            <div class="account__wrap">
+               <div class="user modal">
+                  <div class="user__wrap side-wrap">
+                     <div class="user__info">
+                        <div class="user__name">RDSJAZZZY</div>
+                        <div class="user__phone">post@mail.ru</div>
+                        <!-- /.user__name,phone -->
+                     </div>
+                     <!-- /.user__info -->
+
+                     <div class="user__items">
+                        <div class="user__item user__item-adress">
+                           <img class="user__item-img" src="images/icons/icon-nota.svg" alt="#">
+                           <div class="user__item-text">Мои проекты</div>
+                        </div>
+                        <!-- /.user__item -->
+
+                        <div class="user__item  user__item-orders">
+                           <img class="user__item-img" src="images/icons/icon-shopping-cart.svg" alt="#">
+                           <div class="user__item-text">Купленные проекты</div>
+                        </div>
+                        <!-- /.user__item -->
+
+                        <div class="user__item  user__item-orders">
+                           <img class="user__item-img" src="images/icons/icon-add.svg" alt="#">
+                           <div class="user__item-text">Создать новый проект</div>
+                        </div>
+                        <!-- /.user__item -->
+                     </div>
+                     <!-- /.user__items -->
+
+                     <div class="user__btns">
+                        <button class="user__btn button">Выйти</button>
+                     </div>
+                     <!-- /.user__btns -->
+
+                     <button class="user__btn-close close-btn">
+                        <img class="user-btn" src="images/icons/icon-close.svg" alt="#">
+                     </button>
+                  </div>
+                  <!-- /.user__wrap -->
+               </div>
+               <!-- /.user -->
+            </div>
+            <!-- /.account__wrap -->
+         </div>
+         <!-- /.container -->
+      </section>
+      <!-- /.account -->
+
+      <div class="cart">
+         <h3 class="cart__title">Вам понравилось</h3>
+         <div class="cart__items">
+
+            <div class="cart__item">
+               <img class="cart__img" src="images/cover/cover-card.png" alt="#">
+               <div class="cart__info">
+                  <div class="cart__card-style">Жанр: hip-hop</div>
+                  <a class="cart__card-maker" href="#">jazzy</a>
+                  <div class="cart__card-price">Cтоимость: 3000 ₽</div>
+                  <button class="cart__card-btn button">оплатить</button>
+               </div>
+               <!-- /.cart__info -->
+
+               <button class="cart__btn-close close-btn">
+                  <img class="burger-btn" src="images/icons/icon-close.svg" alt="#">
+               </button>
+            </div>
+            <!-- /.cart__item -->
+         </div>
+         <!-- /.cart__items -->
+
+         <div class="cart__bottom">
+            <div class="cart__sum">
+               <span class="cart__sum">Итого:</span>
+               3 000 ₽
+            </div>
+
+            <button class="cart__btn-pay button">оплатить</button>
+         </div>
+         <!-- /.cart__bottom -->
+      </div>
+      <!-- /.cart -->
+      </div>
+      <!-- /.cart -->
+
+      <div class="reg modal">
+         <div class="reg__wrap">
+            <div class="reg__title">Регистрация</div>
+            <!-- /.reg__title -->
+            <form class="reg__form">
+               <input class="reg__input" placeholder="Псевдоним" type="text">
+               <input class="reg__input" placeholder="e-mail" type="email">
+               <input class="reg__input" placeholder="Пароль" type="password">
+               <input class="reg__input" placeholder="Повторите пароль" type="password">
+               <input class="reg__input" value="+7" placeholder="Номер" type="tel" />
+            </form>
+            <!-- /.reg__form -->
+            <button class="reg__btn button" type="submit">Зарегестрировать</button>
+
+            <button class="reg__btn-close close-btn">
+               <img class="user-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.reg__wrap -->
+      </div>
+      <!-- /.reg -->
+
+      <div class="login modal">
+         <div class="login__wrap">
+            <div class="login__title">Войти</div>
+            <!-- /.login__title -->
+            <form class="login__form">
+               <input class="login__input" placeholder="e-mail" type="email">
+               <input class="login__input" placeholder="Пароль" type="password">
+               <input class="login__input" value="+7" placeholder="Номер" type="tel" />
+            </form>
+            <!-- /.login__form -->
+            <button class="login__btn button button-orange" type="submit">Войти</button>
+            <button class="login__btn button button-orange relogin__btn" type="submit">Восстановить
+               пароль</button>
+
+            <button class="login__btn-close close-btn">
+               <img class="user-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.login__wrap -->
+      </div>
+      <!-- /.login -->
+
+      <div class="relogin modal">
+         <div class="relogin__wrap">
+            <div class="relogin__title">Сброс пароля</div>
+
+            <!-- /.relogin__title -->
+            <form class="relogin__form">
+               <input class="relogin__input" placeholder="e-mail" type="email">
+               <input class="relogin__input" placeholder="Новый пароль" type="password">
+               <input class="relogin__input" placeholder="Повторите пароль" type="password">
+               <input class="relogin__input" value="+7" placeholder="Номер" type="tel" />
+            </form>
+            <!-- /.relogin__form -->
+            <button class="relogin__btn button button-orange" type="submit">Сбросить</button>
+
+            <button class="relogin__btn-close close-btn">
+               <img class="user-btn" src="images/icons/icon-close.svg" alt="#">
+            </button>
+
+            <button class="relogin__btn-back back-btn">
+               <img src="images/icons/icon-arrow-prew.svg" alt="#">
+            </button>
+         </div>
+         <!-- /.relogin__wrap -->
+      </div>
+      <!-- /.relogin -->
+
+
+   </main>
+   <!-- /.mian -->
+
+
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="js/slick.min.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>

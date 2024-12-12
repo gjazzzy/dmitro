@@ -1,0 +1,485 @@
+@import "artist";
+@import "fonts";
+@import "reset";
+@import "global";
+@import "modal";
+
+.header{
+   z-index: 5;
+   position: fixed;
+   left: 0;
+   right: 0;
+   background: #3d3d3d;
+
+   &__wrap{
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__search{
+      position: relative;
+      display: flex;
+      max-width: 500px;
+      width: 100%;
+      background: transparent;
+   }
+
+   &__search-input { 
+      @include regular;
+      width: 100%; 
+      background: transparent;
+      height: 50px;
+      padding: 0 10px 0px 35px;
+      color: #ffffff;
+      line-height: 18px;
+      border-radius: 50px;
+      border: 1px solid #ffffff;
+      outline: none;
+    }
+
+   &__search-btn { 
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 50px;
+      background: transparent;
+      border: 0px;
+      transition: all 0.3s;
+   }
+   &__search-btn:hover{
+      transform: scale(1.1);
+   }
+
+   &__nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+   }
+
+   &__btns{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+   }
+
+   &__btns img{
+      width: 30px;
+      height: 25px;
+   }
+
+   &__btn-cart{
+      position: relative;
+         &::after{
+            position: absolute;
+      content: url('../images/icons/arrow-up.svg');;
+           
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 12px;
+            top: 20px;
+            left: 40px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+      &.active::after{
+         content: url('../images/icons/arrow-down.svg')   
+      }
+   }
+}
+
+.top{
+   padding-top: 90px;
+   background-image: url('../images/cover/main_cover.png');
+   background-size: cover;
+   background-position: 100%;
+   background-repeat: no-repeat;
+   overflow: hidden;
+   height: 100vh;
+   display: flex;
+   &__wrap{
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   &__title{
+      @include bold;
+      font-size: 60px;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow: #000 6px 7px 3px;
+   }
+
+   &__style{
+      display: grid;
+      grid-template-columns: repeat( 2, 1fr);
+      grid-gap: 10px;
+   }
+}
+
+.beat{
+   background: #3d3d3d;
+   padding: 50px 0;
+   min-height: calc(100vh - 90px) ;
+   &__cards{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat( 5, 1fr);
+   }
+
+   &__style{
+      @include regular;
+      color: #ffffff;
+   }
+
+   &__title{
+      @include bold;
+      font-size: 40px;
+      margin-bottom: 50px;
+   }
+
+
+   &__style-btns{
+      display: flex;
+      gap: 15px;
+      margin: 20px;
+
+   }
+
+   &__style-btn{
+      width: fit-content;
+      background: #0000009a;
+      padding: 10px;
+      border-radius:30px ;
+      color: #ffffff 
+   }
+   &__style-btn:hover{
+      background: #000;
+   }
+
+   &__card{
+      @include regular;
+      width: 200px;
+      position: relative;
+      background: #ffffff;
+      color: #000000;
+      border: 1px solid #3d3d3d;
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 10px;
+   }
+
+   &__card-img{
+      width: 200px;
+   }
+
+      &__card-top{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+   
+   &__card-btn--play{
+      position: absolute;
+      background: #02020298;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 35px;
+         &::after{
+            content: url('../images/icons/icon-play.svg');
+         }
+   
+         &.active::after{
+            content: url('../images/icons/icon-pause.svg');
+         }
+   }
+
+
+   &__card-btn--like{
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      
+      &::after{
+         content: url('../images/icons/heart-black.svg');
+      }
+
+      &.active::after{
+         content: url('../images/icons/heart-red.svg');
+        
+      }
+   }
+
+   &__card-info{
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+
+
+   &__card-btns{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+   }
+
+   &__card-btn{
+      border: 1px solid #000;
+      &:hover{
+         background: #3d3d3d;
+         color: #ffffff;
+      }
+   }
+}
+
+// right
+.cart{
+   @include regular;
+   padding-top: 20px;
+   position: fixed;
+   right: 0px;
+   top: 90px;
+   z-index: 20;
+   background: #ffffff;
+   padding: 5px;
+
+
+&__title{
+   @include bold;
+   font-size: 23px;
+   color: #000000;
+   margin-bottom: 20px;
+}
+   &__items{
+      width: 100%;
+      max-width: 450px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border-radius: 20px;
+      gap: 5px;
+      height: 400px;
+      overflow-y: scroll;
+      min-width: none;
+      &::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+        display: none;
+        background: transparent; 
+      }
+   }
+
+   &__item{
+      @include regular;
+      position: relative;
+      display: flex;
+      align-items: start;
+      border-bottom: 1px #a6a6a64f solid;
+      background: #ffffff;
+      gap: 10px;
+      padding-bottom: 10px;
+      cursor: pointer;
+   }
+
+   &__img{
+      width: 100px;
+      height: 100px;
+      border: 1px solid #a6a6a64f;
+      object-fit: cover;
+      object-position: bottom;
+      border-radius: 20px;
+   }
+
+   &__info{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      gap: 5px;
+   }
+
+
+   &__btn{
+      padding: 1px 2px;
+      border: 0;
+      background:transparent;
+      &:hover{
+         background: #cacaca;
+      }
+   }
+
+   &__btn-close{    
+      top: 0px;
+      right: 0;
+   }
+
+   // right__bottom
+   &__bottom{
+      @include bold;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+     
+   }
+
+   &__btn-pay{
+      padding: 20px; 
+      width: 100%;
+      border-radius:0px ;
+   }
+}
+
+.artist{
+   background: #3d3d3d;
+   padding: 50px 0;
+   padding-top: 100px;
+   min-height: (100vh);
+   &__cards{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat( 5, 1fr);
+   }
+
+   &__style{
+      @include regular;
+      color: #ffffff;
+   }
+
+   &__title{
+      @include bold;
+      font-size: 40px;
+      margin-bottom: 50px;
+   }
+
+
+   &__style-btns{
+      display: flex;
+      gap: 15px;
+      margin: 20px;
+
+   }
+
+   &__style-btn{
+      width: fit-content;
+      background: #0000009a;
+      padding: 10px;
+      border-radius:30px ;
+      color: #ffffff 
+   }
+   &__style-btn:hover{
+      background: #000;
+   }
+
+   &__card{
+      @include regular;
+      width: 200px;
+      position: relative;
+      background: #ffffff;
+      color: #000000;
+      border: 1px solid #3d3d3d;
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 10px;
+   }
+
+   &__card-img{
+      width: 200px;
+   }
+
+      &__card-top{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+   
+   &__card-btn--play{
+      position: absolute;
+      background: #02020298;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 35px;
+         &::after{
+            content: url('../images/icons/icon-play.svg');
+         }
+   
+         &.active::after{
+            content: url('../images/icons/icon-pause.svg');
+         }
+   }
+
+
+   &__card-btn--like{
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      
+      &::after{
+         content: url('../images/icons/heart-black.svg');
+      }
+
+      &.active::after{
+         content: url('../images/icons/heart-red.svg');
+        
+      }
+   }
+
+   &__card-info{
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+
+
+   &__card-btns{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+   }
+
+   &__card-btn{
+      border: 1px solid #000;
+      &:hover{
+         background: #3d3d3d;
+         color: #ffffff;
+      }
+   }
+}
+
