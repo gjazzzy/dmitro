@@ -1,0 +1,194 @@
+.contacts-page .contacts__wrap {
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.contacts__left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 558px;
+}
+
+.contacts__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    background: var(--clr-white);
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.08));
+}
+
+.contacts__info__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+}
+
+.contacts__info-item {
+    display: flex;
+    gap: 8px;
+    font-size: var(--fs-12);
+}
+
+.contacts__info-img {
+    width: 42px;
+    max-height: 49px;
+}
+
+.contacts__info-el {
+    font-size: var(--fs-16);
+    margin-top: 4px;
+    max-width: 357px;
+}
+
+.contacts__info-descr {
+    font-size: var(--fs-10);
+}
+
+.contacts__map {
+    width: 100%;
+    margin: 0;
+}
+
+.contacts__map-iframe {
+    width: 100%;
+    height: 100%;
+    height: 500px;
+    display: block;
+}
+
+.contacts__right {
+    width: 100%;
+    max-width: 558px;
+    border-radius: 10px;
+    padding: 20px 20px 16px 20px;
+    background: var(--clr-white);
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.08));
+}
+
+.contacts-page .contacts__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contacts-page .contacts__group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: var(--fs-20-18-16);
+    color: var(--clr-dark-blue);
+}
+
+.contacts-page .contacts__input {
+    border-radius: 6px;
+    border: none;
+    padding: 12px;
+    font-size: var(--fs-20-18-16);
+    background: var(--clr-light-gray);
+    color: var(--clr-dark-blue);
+}
+
+.contacts__input-group.success .contacts__input {
+    border: 0;
+    border-radius: 10px;
+}
+
+.contacts-page .contacts__input:-webkit-autofill,
+.contacts-page .contacts__input:-webkit-autofill:hover,
+.contacts-page .contacts__input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--clr-dark-blue);
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--clr-dark-blue);
+}
+
+.contacts-page .contacts__input::placeholder {
+    color: var(--clr-dark-blue);
+}
+
+.contacts-page .contacts__input:focus {
+    color: var(--clr-dark-blue);
+}
+
+.contacts-page .contacts__input-group-textarea,
+.contacts-page textarea {
+    height: 202px;
+    resize: none;
+}
+
+.contacts-page .contacts__checkbox-wrap {
+    color: var(--clr-dark-blue);
+}
+
+.contacts-page .contacts__checkmark {
+    width: 13px;
+    height: 13px;
+    border: 1px solid var(--clr-dark-blue);
+    border-radius: 2px;
+    background: transparent;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.contacts-page .contacts__checkbox-container input:checked~.contacts__checkmark {
+    background: var(--clr-dark-blue);
+}
+
+.contacts-page .contacts__button {
+    font-size: var(--fs-24-20);
+    margin-top: 20px;
+    font-family: var(--font-main);
+    font-weight: var(--fw-regular);
+    background: var(--clr-dark-blue);
+    color: var(--clr-white);
+}
+
+.contacts-page .contacts__button:hover {
+    background: #1A2634;
+    color: var(--clr-white);
+}
+
+.contacts-page .contacts__error-message {
+    color: var(--clr-dark-blue);
+}
+
+.contacts-page .contacts__floating-label {
+    font-size: var(--fs-16-14);
+}
+
+.contants__more-info {
+    background-color: var(--clr-light-gray);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: var(--fs-24-18-16);
+}
+
+.contants__more-info-title {
+    margin-bottom: 20px;
+}
+
+.contants__more-info-text {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contants__more-info-tags {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.contants__more-info-tag {
+    background: var(--clr-white);
+    max-width: fit-content;
+    padding: 10px;
+    border-radius: 6px;
+}

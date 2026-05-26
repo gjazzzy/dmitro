@@ -1,0 +1,134 @@
+body.no-scroll {
+    overflow: hidden !important;
+    position: fixed !important;
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+.menu__mobile {
+    font-size: var(--fs-modal);
+    font-family: var(--font-main);
+    font-weight: var(--fw-regular);
+    position: fixed;
+    background: var(--bg-header);
+    overflow-y: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    scrollbar-width: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 43px 60px 0 60px;
+    gap: 32px;
+}
+
+.menu__mobile {
+    display: none;
+}
+
+.menu__mobile.active {
+    display: flex;
+}
+
+.mobile__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile__controls {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.mobile__search-container {
+    flex-grow: 1;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.mobile__form {
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-size: var(--fs-12);
+}
+
+.mobile__search-input {
+    width: 100%;
+    height: 28px;
+    padding: 9px 40px 9px 20px;
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+    border: 1px solid var(--clr-white);
+    border-radius: 6px;
+    outline: none;
+}
+
+.mobile__search-input::placeholder {
+    color: var(--clr-white);
+}
+
+.mobile__search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+.mobile__btn {
+    background: transparent;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    border: 1px solid var(--bg-header-btn);
+    z-index: 3;
+}
+
+.mobile__btn-theme {
+    max-width: 82px;
+    width: 100%;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), filter 0.6s ease;
+}
+
+.mobile__nav {
+    width: 100%;
+}
+
+.mobile__item {
+    color: var(--text-header);
+    width: 100%;
+    padding: 20px 0;
+}
+
+.mobile__item .mobile__link:hover {
+    color: var( --clr-red);
+}
+
+.mobile__item:not(:last-child) {
+    border-bottom: 1px solid var(--clr-white);
+}

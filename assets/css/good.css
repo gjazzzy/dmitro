@@ -1,0 +1,7 @@
+.good__banner img {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}

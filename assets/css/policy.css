@@ -1,0 +1,17 @@
+.policy {
+    font-size: var(--fs-policy-text);
+}
+
+.policy a {
+    text-decoration: underline;
+}
+
+.policy__subtitle {
+    font-weight: var(--fw-bold);
+    margin-bottom: 20px;
+}
+
+.policy p {
+    margin-bottom: 20px;
+    font-weight: var(--fw-regulr);
+}

@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Squares';
+    src: url('/assets/fonts/squares-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Squares';
+    src: url('/assets/fonts/squares-light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Squares';
+    src: url('/assets/fonts/squares-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Squares';
+    src: url('/assets/fonts/squares-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Squares';
+    src: url('/assets/fonts/squares-black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BigBang';
+    src: url('/assets/fonts/bigbang.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* family */
+    --font-BigBang: 'BigBang'sans-serif;
+    --font-main: 'Squares', sans-serif;
+    /* size */
+    /*  */
+    --fs-4: 4px;
+    --fs-5: 5px;
+    --fs-6: 6px;
+    --fs-10: 10px;
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-15: 15px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-22: 22px;
+    --fs-24: 24px;
+    --fs-28: 28px;
+    --fs-30: 30px;
+    --fs-32: 32px;
+    --fs-34: 34px;
+    --fs-36: 36px;
+    --fs-38: 38px;
+    --fs-40: 40px;
+    --fs-45: 45px;
+    /* weight */
+    --fw-black: 900;
+    --fw-bold: 700;
+    --fw-medium: 500;
+    --fw-regular: 400;
+    --fw-light: 300;
+    --fw-thin: 100;
+    /* fonts */
+    --fs-dropdown-name: var(--fs-28);
+    --fs-policy-text: var(--fs-18);
+    --fs-buy-button: var(--fs-14);
+    --fs-ditail-text: var(--fs-16);
+    --fs-ditail-subtitle: var(--fs-18);
+    --fs-ditail-item: var(--fs-18);
+    --fs-ditail-weight: var(--fs-16);
+    --fs-ditail-title: var(--fs-32);
+    --fs-card-tags: var(--fs-12);
+    --fs-btn-all: var(--fs-22);
+    --fs-title-section: var(--fs-45);
+    --fs-filter-title: var(--fs-38);
+    --fs-filter-subtitle: var(--fs-22);
+    --fs-500-316-170: 500px;
+    --fs-48-40-32: 48px;
+    --fs-32-30-24: var(--fs-32);
+    --fs-32-30-20: var(--fs-32);
+    --fs-32-24-20: var(--fs-32);
+    --fs-28-24-18: var(--fs-28);
+    --fs-24-18-16: var(--fs-24);
+    --fs-24-20: var(--fs-24);
+    --fs-22-18: var(--fs-22);
+    --fs-20-18: var(--fs-20);
+    --fs-20-18-16: var(--fs-20);
+    --fs-16-14: var(--fs-16);
+    --fs-menu: var(--fs-24);
+    --fs-menu-dropdown: var(--fs-20);
+    --fs-ozon-button: var(--fs-16);
+    --fs-breadcrumb: var(--fs-14);
+    --fs-hero-result-text: var(--fs-36);
+    --fs-product-name-lg: var(--fs-40);
+    --fs-product-name: var(--fs-28);
+    --fs-contacts-subtitle: var(--fs-32);
+    --fs-footer-logo-text: var(--fs-18);
+    --fs-footer-item: var(--fs-16);
+    --fs-footer-contact-title: var(--fs-16);
+    --fs-footer-contact-number: var(--fs-20);
+    --fs-footer-contact-sub: var(--fs-12);
+    --fs-footer-bottom: var(--fs-16);
+}
+
+body {
+    color: var(--clr-dark-blue);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-16);
+}
+
+* {
+    font-family: var(--font-main);
+}

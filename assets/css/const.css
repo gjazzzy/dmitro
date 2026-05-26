@@ -1,0 +1,216 @@
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+    }
+    
+    main {
+        flex-grow: 1;
+        margin: 0;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1180px;
+        padding: 20px 20px 30px 20px;
+        min-height: 100vh;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .home-page .container::after,
+    .catalog-page .container::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        left: 50%;
+        width: 100vw;
+        transform: translateX(-50%);
+        background-image: url('../img/bg-main.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+        pointer-events: none;
+    }
+    
+    .section {
+        margin: 0 0 128px 0;
+    }
+    
+    .section__page {
+        margin: 64px 0 0 0;
+        padding: 64px 0px;
+        width: 100%;
+        max-width: 849px;
+    }
+    
+    .button {
+        padding: 8px 16px;
+        border-radius: 6px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .title {
+        font-size: var(--fs-title-section);
+        font-weight: var(--fw-bold);
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+    
+    .subtitle {
+        font-size: var(--fs-32-24-20);
+        font-weight: var(--fw-bold);
+        text-transform: uppercase;
+    }
+    
+    .btn-all {
+        font-family: 'BigBang', sans-serif;
+        padding: 10px 20px;
+        font-size: var(--fs-btn-all);
+        text-transform: uppercase;
+        margin: 32px auto 0 auto;
+        background: var(--clr-white);
+        width: max-content;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        border-radius: 4px;
+    }
+    
+    .btn-all:hover {
+        background: #EDEDED;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 57px;
+        height: 9px;
+        border-radius: 2px;
+        background-color: #26374d;
+        opacity: .5;
+        margin: 0 3px;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: #26374D;
+        opacity: 1;
+    }
+    /*  */
+    /*  */
+    
+    .temp-clip {
+        display: inline-flex;
+        color: #ffffff;
+        padding: 1px;
+        white-space: nowrap;
+    }
+    
+    .temp-item {
+        height: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border-radius: 2px;
+        font-size: var(--fs-card-tags);
+        font-weight: var(--fw-bold);
+    }
+    
+    .temp-item span {
+        text-transform: none;
+        margin-right: 5px;
+        color: var(--clr-white);
+        font-size: var(--fs-card-tags);
+    }
+    
+    .card-tag {
+        display: flex;
+        align-items: center;
+        padding: 2px 10px;
+        font-size: var(--fs-16);
+        background: var(--clr-dark-blue);
+        font-weight: var(--fw-bold);
+        color: var(--clr-white);
+        text-transform: uppercase;
+        border-radius: 2px;
+        white-space: nowrap;
+    }
+    
+    .cold {
+        background: linear-gradient(90deg, #0f6fb6 0%, #20a5e0 100%);
+        clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
+        padding-left: 6px;
+        padding-right: 13px;
+        color: var(--clr-white);
+        filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff);
+    }
+    
+    .hot {
+        background: linear-gradient(90deg, #e8005c 0%, #e40311 100%);
+        clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: -8px;
+        color: var(--clr-white);
+        filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff);
+    }
+    /*  */
+    
+    .card-clip {
+        display: inline-block;
+        min-width: 140px;
+        min-height: 140px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 10px;
+        background: linear-gradient(135deg, transparent 25px, #ffffff 0) top left, linear-gradient(-45deg, transparent 25px, #ffffff 0) bottom right, linear-gradient(-135deg, #ffffff 100%, transparent 0) top right, linear-gradient(45deg, #ffffff 100%, transparent 0) bottom left;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.08));
+    }
+    
+    .card-catalog-clip {
+        display: inline-block;
+        min-width: 140px;
+        min-height: 140px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background: linear-gradient(135deg, transparent 15px, #ffffff 0) top left, linear-gradient(-45deg, transparent 15px, #ffffff 0) bottom right, linear-gradient(-135deg, #ffffff 100%, transparent 0) top right, linear-gradient(45deg, #ffffff 100%, transparent 0) bottom left;
+        background-size: 55% 55%;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15)) drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.08));
+    }
+    /*  */
+    
+    .button-clip {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        padding: 6px 0px;
+        background-color: var(--clr-dark-blue);
+        color: var(--clr-white);
+        font-size: var(--fs-18);
+        font-weight: var(--fw-bold);
+        text-transform: uppercase;
+        white-space: nowrap;
+        border-radius: 2px;
+        clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
+    }
+    
+    .button-clip:hover {
+        background-color: #1A2634;
+    }
